@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors>
+    <string>jenkins.model.DownloadSettings$Warning</string>
+    <string>jenkins.security.s2m.MasterKillSwitchWarning</string>
+    <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
+  </disabledAdministrativeMonitors>
+  <version>2.32.2</version>
+  <numExecutors>0</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:khoa.ho</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:loc.nguyen</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:khoa.ho</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:loc.nguyen</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:khoa.ho</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:loc.nguyen</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:khoa.ho</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:loc.nguyen</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:khoa.ho</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:loc.nguyen</permission>
+    <permission>hudson.model.Computer.Build:khoa.ho</permission>
+    <permission>hudson.model.Computer.Build:loc.nguyen</permission>
+    <permission>hudson.model.Computer.Configure:khoa.ho</permission>
+    <permission>hudson.model.Computer.Configure:loc.nguyen</permission>
+    <permission>hudson.model.Computer.Connect:khoa.ho</permission>
+    <permission>hudson.model.Computer.Connect:loc.nguyen</permission>
+    <permission>hudson.model.Computer.Create:khoa.ho</permission>
+    <permission>hudson.model.Computer.Create:loc.nguyen</permission>
+    <permission>hudson.model.Computer.Delete:khoa.ho</permission>
+    <permission>hudson.model.Computer.Delete:loc.nguyen</permission>
+    <permission>hudson.model.Computer.Disconnect:khoa.ho</permission>
+    <permission>hudson.model.Computer.Disconnect:loc.nguyen</permission>
+    <permission>hudson.model.Hudson.Administer:khoa.ho</permission>
+    <permission>hudson.model.Hudson.Administer:loc.nguyen</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:khoa.ho</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:loc.nguyen</permission>
+    <permission>hudson.model.Hudson.Read:khoa.ho</permission>
+    <permission>hudson.model.Hudson.Read:loc.nguyen</permission>
+    <permission>hudson.model.Hudson.RunScripts:khoa.ho</permission>
+    <permission>hudson.model.Hudson.RunScripts:loc.nguyen</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:khoa.ho</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:loc.nguyen</permission>
+    <permission>hudson.model.Item.Build:khoa.ho</permission>
+    <permission>hudson.model.Item.Build:loc.nguyen</permission>
+    <permission>hudson.model.Item.Cancel:khoa.ho</permission>
+    <permission>hudson.model.Item.Cancel:loc.nguyen</permission>
+    <permission>hudson.model.Item.Configure:khoa.ho</permission>
+    <permission>hudson.model.Item.Configure:loc.nguyen</permission>
+    <permission>hudson.model.Item.Create:khoa.ho</permission>
+    <permission>hudson.model.Item.Create:loc.nguyen</permission>
+    <permission>hudson.model.Item.Delete:khoa.ho</permission>
+    <permission>hudson.model.Item.Delete:loc.nguyen</permission>
+    <permission>hudson.model.Item.Discover:khoa.ho</permission>
+    <permission>hudson.model.Item.Discover:loc.nguyen</permission>
+    <permission>hudson.model.Item.Move:khoa.ho</permission>
+    <permission>hudson.model.Item.Move:loc.nguyen</permission>
+    <permission>hudson.model.Item.Read:khoa.ho</permission>
+    <permission>hudson.model.Item.Read:loc.nguyen</permission>
+    <permission>hudson.model.Item.Workspace:khoa.ho</permission>
+    <permission>hudson.model.Item.Workspace:loc.nguyen</permission>
+    <permission>hudson.model.Run.Delete:khoa.ho</permission>
+    <permission>hudson.model.Run.Delete:loc.nguyen</permission>
+    <permission>hudson.model.Run.Replay:khoa.ho</permission>
+    <permission>hudson.model.Run.Replay:loc.nguyen</permission>
+    <permission>hudson.model.Run.Update:khoa.ho</permission>
+    <permission>hudson.model.Run.Update:loc.nguyen</permission>
+    <permission>hudson.model.View.Configure:khoa.ho</permission>
+    <permission>hudson.model.View.Configure:loc.nguyen</permission>
+    <permission>hudson.model.View.Create:khoa.ho</permission>
+    <permission>hudson.model.View.Create:loc.nguyen</permission>
+    <permission>hudson.model.View.Delete:khoa.ho</permission>
+    <permission>hudson.model.View.Delete:loc.nguyen</permission>
+    <permission>hudson.model.View.Read:khoa.ho</permission>
+    <permission>hudson.model.View.Read:loc.nguyen</permission>
+    <permission>hudson.scm.SCM.Tag:khoa.ho</permission>
+    <permission>hudson.scm.SCM.Tag:loc.nguyen</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.LDAPSecurityRealm" plugin="ldap@1.14">
+    <server>ldap://opendj.lan</server>
+    <rootDN></rootDN>
+    <inhibitInferRootDN>false</inhibitInferRootDN>
+    <userSearchBase></userSearchBase>
+    <userSearch>uid={0}</userSearch>
+    <groupMembershipStrategy class="jenkins.security.plugins.ldap.FromGroupSearchLDAPGroupMembershipStrategy">
+      <filter></filter>
+    </groupMembershipStrategy>
+    <managerDN>cn=Directory Manager</managerDN>
+    <managerPasswordSecret>{AQAAABAAAAAQ+YOmmoH39fGEubZqw/Sp+8U6wgOpP+L9muobDxEv1xY=}</managerPasswordSecret>
+    <disableMailAddressResolver>false</disableMailAddressResolver>
+    <displayNameAttributeName>givenName</displayNameAttributeName>
+    <mailAddressAttributeName>mail</mailAddressAttributeName>
+    <userIdStrategy class="jenkins.model.IdStrategy$CaseInsensitive"/>
+    <groupIdStrategy class="jenkins.model.IdStrategy$CaseInsensitive"/>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${ITEM_ROOTDIR}/workspace</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>All</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>All</primaryView>
+  <slaveAgentPort>0</slaveAgentPort>
+  <label></label>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>
